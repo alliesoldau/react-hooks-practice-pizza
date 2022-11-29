@@ -21,12 +21,12 @@ function PizzaForm({ pizzaForm, handleEditedPizza }) {
         })
         setVegetarian(false)
     }
-    }
-
+  }
+  
   const [updatedPizza, setUpdatedPizza] = useState({
-    topping: "fish",
-    size: "Small",
-    vegetarian: true,
+    topping: pizzaForm.topping,
+    size: pizzaForm.size,
+    vegetarian: pizzaForm.vegetarian,
   });
 
   function handleChange(event) {

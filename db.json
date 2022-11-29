@@ -2,8 +2,8 @@
   "pizzas": [
     {
       "id": 1,
-      "topping": "fish",
-      "size": "Medium",
+      "topping": "ch",
+      "size": "Small",
       "vegetarian": false
     },
     {
