@@ -5,6 +5,12 @@ function PizzaForm({ pizzaForm, handleEditedPizza }) {
   // TO DO: need to populate the form with the info from the clicked on pizza to start
 
   const [vegetarian, setVegetarian] = useState(true)
+
+  const [updatedPizza, setUpdatedPizza] = useState({
+    topping: "",
+    size: "",
+    vegetarian: false,
+  });
   
   function handleRadioChange(event) {
     console.log(`event.target.value: ${event.target.value}`)
@@ -22,12 +28,6 @@ function PizzaForm({ pizzaForm, handleEditedPizza }) {
         setVegetarian(false)
     }
   }
-  
-  const [updatedPizza, setUpdatedPizza] = useState({
-    topping: pizzaForm.topping,
-    size: pizzaForm.size,
-    vegetarian: pizzaForm.vegetarian,
-  });
 
   function handleChange(event) {
     setUpdatedPizza({
